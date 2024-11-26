@@ -1,53 +1,152 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFPR - Mostra de Cursos</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .menu li a:hover {
+            color: #FFD700;
+        }
+
+        /* Seções */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h1 {
+            font-size: 32px;
+            color: #4CAF50;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            background-color: #E6E6FA;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            color: #4CAF50;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="logo">IFPR Alunos</div>
             <ul class="menu">
-                <li>O Projeto</li>
-                <li>Sobre o Instituto</li>
-                <li>Como Ingressar?</li>
-                <li>Cursos</li>
-                <li>Comunicação</li>
+                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="#instituto">Sobre o Instituto</a></li>
+                <li><a href="#ingresso">Como Ingressar?</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#comunicacao">Comunicação</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="projeto">
+    <section id="projeto" class="section">
         <h1>O PROJETO</h1>
         <div class="card">
-            <h2>O que é o projeto mostra de cursos?</h2>
+            <h2>O que é o projeto Mostra de Cursos?</h2>
             <p>O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo apresentar aos alunos e à comunidade em geral as diversas formações oferecidas pela instituição. Esse evento é uma oportunidade para os estudantes conhecerem melhor os cursos disponíveis, suas características, áreas de atuação e as oportunidades que podem surgir após a conclusão.</p>
         </div>
     </section>
 
-    <section class="instituto">
+    <section id="instituto" class="section">
         <h1>SOBRE O INSTITUTO</h1>
         <div class="card">
             <h2>O que os Institutos Federais nos proporcionam?</h2>
-            <p>Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos, contribuindo para reduzir as disparidades educacionais...</p>
+            <p>Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos, contribuindo para reduzir as disparidades educacionais. Representam centros de excelência ao atuarem desde o ensino técnico de nível médio até a pós-graduação...</p>
         </div>
         <div class="card">
             <h2>Missão e Objetivos Educacionais</h2>
-            <p>Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas voltadas para a comunidade...</p>
+            <p>Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas voltadas para a comunidade, o IFPR visa capacitar seus estudantes e desenvolver o pensamento crítico por meio de uma educação integral.</p>
         </div>
     </section>
 
-    <section class="ingresso">
+    <section id="ingresso" class="section">
         <h1>COMO INGRESSAR?</h1>
         <div class="card">
             <h2>Processo Seletivo</h2>
-            <p>O Processo Seletivo é realizado uma vez por ano...</p>
+            <p>O Processo Seletivo é realizado uma vez por ano. Os estudantes aprovados têm a oportunidade de estudar em uma escola pública, gratuita e de qualidade, devendo ser observadas as datas estabelecidas em edital específico.</p>
         </div>
         <div class="card">
             <h2>Sorteio de Vagas</h2>
-            <p>Para participar dos sorteios de vagas não é necessário ter feito a prova do Processo Seletivo...</p>
+            <p>Para participar dos sorteios de vagas, não é necessário ter feito a prova do Processo Seletivo. Não é preciso pagar taxa de inscrição. Caso seja sorteado, o candidato já estará apto a preencher a vaga.</p>
         </div>
     </section>
 </body>
