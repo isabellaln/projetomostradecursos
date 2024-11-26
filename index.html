@@ -1,34 +1,54 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>IFPR - Mostra de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <div class="container-fluid">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">O Projeto</a>
-                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre o Instituto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Como Ingressar?</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Cursos</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        <nav>
+            <ul class="menu">
+                <li>O Projeto</li>
+                <li>Sobre o Instituto</li>
+                <li>Como Ingressar?</li>
+                <li>Cursos</li>
+                <li>Comunicação</li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="O Projeto"><img src="./assets/img/pagina_inicio.jpg" alt="600" width="800" style="max-width: 100%;"></section>
-        <section id="projetos">
-    </main>
+
+    <section class="projeto">
+        <h1>O PROJETO</h1>
+        <div class="card">
+            <h2>O que é o projeto mostra de cursos?</h2>
+            <p>O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo apresentar aos alunos e à comunidade em geral as diversas formações oferecidas pela instituição. Esse evento é uma oportunidade para os estudantes conhecerem melhor os cursos disponíveis, suas características, áreas de atuação e as oportunidades que podem surgir após a conclusão.</p>
+        </div>
+    </section>
+
+    <section class="instituto">
+        <h1>SOBRE O INSTITUTO</h1>
+        <div class="card">
+            <h2>O que os Institutos Federais nos proporcionam?</h2>
+            <p>Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos, contribuindo para reduzir as disparidades educacionais...</p>
+        </div>
+        <div class="card">
+            <h2>Missão e Objetivos Educacionais</h2>
+            <p>Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas voltadas para a comunidade...</p>
+        </div>
+    </section>
+
+    <section class="ingresso">
+        <h1>COMO INGRESSAR?</h1>
+        <div class="card">
+            <h2>Processo Seletivo</h2>
+            <p>O Processo Seletivo é realizado uma vez por ano...</p>
+        </div>
+        <div class="card">
+            <h2>Sorteio de Vagas</h2>
+            <p>Para participar dos sorteios de vagas não é necessário ter feito a prova do Processo Seletivo...</p>
+        </div>
+    </section>
 </body>
 </html>
