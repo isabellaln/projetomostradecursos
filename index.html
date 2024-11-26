@@ -3,132 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFPR - Mostra de Cursos</title>
+    <title>Instituto Federal</title>
     <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #ffffff; /* Fundo claro e elegante */
-            color: #000000; /* Texto escuro para contraste */
-            line-height: 1.6;
-        }
+    font-family: 'Glacial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #000;
+}
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #ffffff; /* Cor escura para destaque */
-            padding: 15px 30px;
-        }
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
 
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #000000; /* Letra clara */
-        }
+header .logo h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    color: #4b0082;
+}
 
-        .menu {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
 
-        .menu li a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
+nav ul li {
+    font-family: 'Intro', sans-serif;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+}
 
-        .menu li a:hover {
-            color: #ffe27a; /* Destaque ao passar o mouse */
-        }
+main {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
 
-        /* Seções */
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-        }
+h2 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
 
-        .card h2 {
-            font-size: 20px;
-            background-color: #cdb4f5; /* Fundo com destaque */
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            color: #2b2b2b; /* Texto escuro */
-        }
+.project-section,
+.institute-section {
+    background-color: #d8bfff; /* Roxo claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
-        .card p {
-            font-size: 16px;
-            color: #555555;
-            margin-top: 10px;
-        }
+.sub-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #4b0082; /* Roxo escuro */
+    color: #fff;
+    border-radius: 10px;
+}
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .menu {
-                flex-direction: column;
-                gap: 15px;
-            }
+.sub-section h3 {
+    font-family: 'Intro', sans-serif;
+    margin-top: 0;
+    font-size: 20px;
+}
 
-            .card {
-                padding: 15px;
-            }
-        }
+.sub-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img src="img/logo3.png" alt="100" width="100" style="max-width: 100%;">
-            <ul class="menu">
-                <li><a href="#projeto">O Projeto</a></li>
-                <li><a href="#instituto">Sobre o Instituto</a></li>
-                <li><a href="#ingresso">Como Ingressar?</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#comunicacao">Comunicação</a></li>
+        <div class="logo">
+            <h1>IFPR Alunos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>O Projeto</li>
+                <li>Sobre o Instituto</li>
+                <li>Como Ingressar?</li>
+                <li>Cursos</li>
+                <li>Comunicação</li>
             </ul>
         </nav>
     </header>
 
-    <section id="projeto" class="card">
-        <h1>O PROJETO</h1>
-        <div class="card">
-            <h2>O que é o projeto Mostra de Cursos?</h2>
-            <p>O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo apresentar aos alunos e à comunidade em geral as diversas formações oferecidas pela instituição. Esse evento é uma oportunidade para os estudantes conhecerem melhor os cursos disponíveis, suas características, áreas de atuação e as oportunidades que podem surgir após a conclusão.</p>
-        </div>
-    </section>
+    <main>
+        <section class="project-section">
+            <h2>O PROJETO</h2>
+            <div class="sub-section">
+                <h3>O que é o projeto mostra de cursos?</h3>
+                <p>
+                    O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo
+                    apresentar aos alunos e à comunidade em geral as diversas formações oferecidas pela instituição. Esse
+                    evento é uma oportunidade para os estudantes conhecerem melhor os cursos disponíveis, suas
+                    características, áreas de atuação e as oportunidades que podem surgir após a conclusão.
+                </p>
+            </div>
+        </section>
 
-    <section id="instituto" class="section">
-        <h1>SOBRE O INSTITUTO</h1>
-        <div class="card">
-            <h2>O que os Institutos Federais nos proporcionam?</h2>
-            <p>Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos, contribuindo para reduzir as disparidades educacionais. Representam centros de excelência ao atuarem desde o ensino técnico de nível médio até a pós-graduação...</p>
-        </div>
-        <div class="card">
-            <h2>Missão e Objetivos Educacionais</h2>
-            <p>Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas voltadas para a comunidade, o IFPR visa capacitar seus estudantes e desenvolver o pensamento crítico por meio de uma educação integral.</p>
-        </div>
-    </section>
-
-    <section id="ingresso" class="section">
-        <h1>COMO INGRESSAR?</h1>
-        <div class="card">
-            <h2>Processo Seletivo</h2>
-            <p>O Processo Seletivo é realizado uma vez por ano. Os estudantes aprovados têm a oportunidade de estudar em uma escola pública, gratuita e de qualidade, devendo ser observadas as datas estabelecidas em edital específico.</p>
-        </div>
-        <div class="card">
-            <h2>Sorteio de Vagas</h2>
-            <p>Para participar dos sorteios de vagas, não é necessário ter feito a prova do Processo Seletivo. Não é preciso pagar taxa de inscrição. Caso seja sorteado, o candidato já estará apto a preencher a vaga.</p>
-        </div>
-    </section>
+        <section class="institute-section">
+            <h2>SOBRE O INSTITUTO</h2>
+            <div class="sub-section">
+                <h3>O que os Institutos Federais nos proporciona?</h3>
+                <p>
+                    Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos,
+                    contribuindo para reduzir as disparidades educacionais. Representam centros de excelência ao atuarem
+                    desde o ensino técnico de nível médio até a pós-graduação, no desenvolvimento de programas de extensão,
+                    divulgação científica e tecnológica, além de realizar e estimular a pesquisa aplicada, a produção
+                    cultural, o empreendedorismo e o cooperativismo.
+                </p>
+            </div>
+            <div class="sub-section">
+                <h3>Missão e Objetivos Educacionais</h3>
+                <p>
+                    Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas
+                    voltadas para a comunidade, o IFPR visa capacitar seus estudantes para trabalhar em diferentes campos da
+                    ciência e tecnologia, mas também desenvolver o pensamento crítico por meio de uma educação integral. O
+                    objetivo é formar cidadãos engajados e comprometidos com a sustentabilidade e o desenvolvimento local e
+                    regional.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
