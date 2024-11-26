@@ -21,6 +21,9 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         header .logo h1 {
@@ -37,11 +40,16 @@
             padding: 0;
         }
 
-        nav ul li {
+        nav ul li a {
             font-family: 'Intro', sans-serif;
             color: #000;
             font-size: 18px;
+            text-decoration: none;
             cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            color: #4b0082; /* Roxo escuro */
         }
 
         main {
@@ -53,56 +61,62 @@
         h2, h3 {
             font-family: 'League Spartan', sans-serif;
             color: #4b0082; /* Roxo escuro */
+            text-align: center;
         }
 
-        .project-section,
-        .institute-section {
+        .section {
             background-color: #d8bfff; /* Roxo claro */
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
-        .sub-section {
-            margin: 20px 0;
-            padding: 20px;
+        .section-title {
+            font-family: 'League Spartan', sans-serif;
+            background-color: #4b0082; /* Roxo escuro */
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-content {
             background-color: #fff; /* Branco */
+            padding: 20px;
             border: 2px solid #d8bfff; /* Borda roxa clara */
             border-radius: 10px;
-            color: #000;
+            margin-top: 10px;
         }
 
-        .sub-section h3 {
-            font-size: 20px;
-            margin-top: 0;
-        }
-
-        .sub-section p {
+        .section-content p {
             font-size: 16px;
             line-height: 1.6;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho com Menu -->
     <header>
         <div class="logo">
             <h1>IFPR Alunos</h1>
         </div>
         <nav>
             <ul>
-                <li>O Projeto</li>
-                <li>Sobre o Instituto</li>
-                <li>Como Ingressar?</li>
-                <li>Cursos</li>
-                <li>Comunicação</li>
+                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="#instituto">Sobre o Instituto</a></li>
+                <li><a href="#cursos">Como Ingressar?</a></li>
+                <li><a href="#missao">Missão e Objetivos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="project-section">
-            <h2>O PROJETO</h2>
-            <div class="sub-section">
+        <!-- O Projeto -->
+        <section id="projeto" class="section">
+            <div class="section-title">
+                <h2>O PROJETO</h2>
+            </div>
+            <div class="section-content">
                 <h3>O que é o projeto mostra de cursos?</h3>
                 <p>
                     O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo
@@ -113,9 +127,12 @@
             </div>
         </section>
 
-        <section class="institute-section">
-            <h2>SOBRE O INSTITUTO</h2>
-            <div class="sub-section">
+        <!-- Sobre o Instituto -->
+        <section id="instituto" class="section">
+            <div class="section-title">
+                <h2>SOBRE O INSTITUTO</h2>
+            </div>
+            <div class="section-content">
                 <h3>O que os Institutos Federais nos proporciona?</h3>
                 <p>
                     Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos,
@@ -125,8 +142,29 @@
                     cultural, o empreendedorismo e o cooperativismo.
                 </p>
             </div>
-            <div class="sub-section">
-                <h3>Missão e Objetivos Educacionais</h3>
+        </section>
+
+        <!-- Como Ingressar -->
+        <section id="cursos" class="section">
+            <div class="section-title">
+                <h2>COMO INGRESSAR?</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    Para ingressar no Instituto Federal, é necessário participar de processos seletivos que podem variar
+                    conforme o curso ou modalidade de ensino escolhida. O ingresso pode ocorrer através de vestibulares,
+                    seleção por análise de histórico escolar ou outros critérios estabelecidos pela instituição. O objetivo
+                    é garantir acesso democrático e inclusivo à educação de qualidade.
+                </p>
+            </div>
+        </section>
+
+        <!-- Missão e Objetivos -->
+        <section id="missao" class="section">
+            <div class="section-title">
+                <h2>MISSÃO E OBJETIVOS EDUCACIONAIS</h2>
+            </div>
+            <div class="section-content">
                 <p>
                     Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas
                     voltadas para a comunidade, o IFPR visa capacitar seus estudantes para trabalhar em diferentes campos da
