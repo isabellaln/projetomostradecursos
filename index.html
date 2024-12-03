@@ -1,193 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Federal</title>
+    <title>Site Estilizado</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos Gerais */
-        body {
-            font-family: 'Glacial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #000;
-            scroll-behavior: smooth;
-        }
+        /* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background-color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #ddd;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        header .logo h1 {
-            font-family: 'League Spartan', sans-serif;
-            font-size: 24px;
-            color: #4b0082; /* Roxo escuro */
-        }
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            margin: 0;
-            padding: 0;
-        }
+header nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            font-family: 'Intro', sans-serif;
-            color: #000;
-            font-size: 18px;
-            text-decoration: none;
-            cursor: pointer;
-        }
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav ul li a:hover {
-            color: #4b0082; /* Roxo escuro */
-        }
+header nav ul li a:hover {
+    text-decoration: underline;
+}
 
-        main {
-            margin: 20px auto;
-            max-width: 1200px;
-            padding: 20px;
-        }
+/* Seções */
+main {
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
 
-        h2, h3 {
-            font-family: 'League Spartan', sans-serif;
-            color: #000000; /* Roxo escuro */
-            text-align: center;
-        }
+section {
+    padding: 50px;
+    min-height: 100vh;
+}
 
-        .section {
-            background-color: #d8bfff; /* Roxo claro */
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-        }
+#section1 {
+    background-color: #f4f4f4;
+}
 
-        .section-title {
-            font-family: 'League Spartan', sans-serif;
-            background-color: #ac58e7; /* Roxo escuro */
-            color: #fff;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-        }
+#section2 {
+    background-color: #ddd;
+}
 
-        .section-content {
-            background-color: #fff; /* Branco */
-            padding: 20px;
-            border: 2px solid #d8bfff; /* Borda roxa clara */
-            border-radius: 10px;
-            margin-top: 10px;
-        }
+#section3 {
+    background-color: #bbb;
+}
 
-        .section-content p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
     </style>
 </head>
 <body>
-    <!-- Cabeçalho com Menu -->
     <header>
-        <img src="img/logo3.png" alt="100" width="100" style="max-width: 100%;">
         <nav>
             <ul>
-                <li><a href="#projeto">O Projeto</a></li>
-                <li><a href="#instituto">Sobre o Instituto</a></li>
-                <li><a href="#cursos">Como Ingressar?</a></li>
-                <li><a href="#missao">Missão e Objetivos</a></li>
-                <li><a href="#comunicacao">Comunicação</a></li>
+                <li><a href="#section1">Seção 1</a></li>
+                <li><a href="#section2">Seção 2</a></li>
+                <li><a href="#section3">Seção 3</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <!-- O Projeto -->
-        <section id="projeto" class="section">
-            <div class="section-title">
-                <h2>O PROJETO</h2>
-            </div>
-            <div class="section-content">
-                <h3>O que é o projeto mostra de cursos?</h3>
-                <p>
-                    O projeto "Mostra de Cursos" do Instituto Federal do Paraná (IFPR) em Telêmaco Borba tem como objetivo
-                    apresentar aos alunos e à comunidade em geral as diversas formações oferecidas pela instituição. Esse
-                    evento é uma oportunidade para os estudantes conhecerem melhor os cursos disponíveis, suas
-                    características, áreas de atuação e as oportunidades que podem surgir após a conclusão.
-                </p>
-            </div>
+        <section id="section1">
+            <h1>Bem-vindo à Seção 1</h1>
+            <p>Conteúdo da primeira seção.</p>
         </section>
-
-        <!-- Sobre o Instituto -->
-        <section id="instituto" class="section">
-            <div class="section-title">
-                <h2>SOBRE O INSTITUTO</h2>
-            </div>
-            <div class="section-content">
-                <h3>O que os Institutos Federais nos proporciona?</h3>
-                <p>
-                    Eles oferecem oportunidades educacionais para uma variedade de públicos, incluindo jovens e adultos,
-                    contribuindo para reduzir as disparidades educacionais. Representam centros de excelência ao atuarem
-                    desde o ensino técnico de nível médio até a pós-graduação, no desenvolvimento de programas de extensão,
-                    divulgação científica e tecnológica, além de realizar e estimular a pesquisa aplicada, a produção
-                    cultural, o empreendedorismo e o cooperativismo.
-                </p>
-            </div>
+        <section id="section2">
+            <h1>Bem-vindo à Seção 2</h1>
+            <p>Conteúdo da segunda seção.</p>
         </section>
-
-        <!-- Como Ingressar -->
-        <section id="cursos" class="section">
-            <div class="section-title">
-                <h2>COMO INGRESSAR?</h2>
-            </div>
-            <div class="section-content">
-                <p>
-                    Para ingressar no Instituto Federal, é necessário participar de processos seletivos que podem variar
-                    conforme o curso ou modalidade de ensino escolhida. O ingresso pode ocorrer através de vestibulares,
-                    seleção por análise de histórico escolar ou outros critérios estabelecidos pela instituição. O objetivo
-                    é garantir acesso democrático e inclusivo à educação de qualidade.
-                </p>
-            </div>
-        </section>
-
-        <!-- Missão e Objetivos -->
-        <section id="missao" class="section">
-            <div class="section-title">
-                <h2>MISSÃO E OBJETIVOS EDUCACIONAIS</h2>
-            </div>
-            <div class="section-content">
-                <p>
-                    Por meio de atividades de ensino, pesquisa, inovação e extensão focadas em ações educacionais e técnicas
-                    voltadas para a comunidade, o IFPR visa capacitar seus estudantes para trabalhar em diferentes campos da
-                    ciência e tecnologia, mas também desenvolver o pensamento crítico por meio de uma educação integral. O
-                    objetivo é formar cidadãos engajados e comprometidos com a sustentabilidade e o desenvolvimento local e
-                    regional.
-                </p>
-            </div>
-        </section>
-
-        <!-- Comunicação -->
-        <section id="comunicacao" class="section">
-            <div class="section-title">
-                <h2>COMUNICAÇÃO</h2>
-            </div>
-            <div class="section-content">
-                <p>
-                    O Instituto Federal busca fortalecer os canais de comunicação com os estudantes, pais, e comunidade em
-                    geral. Isso inclui o uso de plataformas digitais, redes sociais, reuniões presenciais e eventos que
-                    promovem o diálogo direto com a instituição. A transparência e acessibilidade são prioridades.
-                </p>
-            </div>
+        <section id="section3">
+            <h1>Bem-vindo à Seção 3</h1>
+            <p>Conteúdo da terceira seção.</p>
         </section>
     </main>
+    <footer>
+        <p>© 2024 - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
